@@ -4,7 +4,7 @@ import UIKit
 
 var str = "Hello, playground"
 
-var data:NSDictionary = ["ikawa":"masao", "masaki":"shintaro", "fujihashi":"mika","ikawa":"masaoikawa"]
+var data:NSDictionary = ["ikawa1":"masao", "masaki":"shintaro", "fujihashi":"mika","ikawa":"masaoikawa"]
 
 var anObject = ["ikawa":"masao", "masao":"ikawamasao"]
 
