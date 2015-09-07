@@ -8,18 +8,35 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIAlertViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func btn1Push(sender: AnyObject) {
+        var alert = UIAlertView(title: "Check", message: "どうなの", delegate: self, cancelButtonTitle: "いいえ", otherButtonTitles: "はい","どうなの？")
+        alert.show()
+    }
+    
+    func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
+        switch (buttonIndex) {
+        case 0:
+            NSLog("0")
+        case 1:
+            NSLog("1")
+        case 2:
+            NSLog("2")
+        default:
+            NSLog("Default")
+        }
+    }
 }
 
